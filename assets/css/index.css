@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+    background-color: #F2F2F2;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2c5aa0 !important;
+}
+
+.btn {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.3) !important;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    padding: 200px 0px 0px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #333;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.btn-hero {
+    background-color: white;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #2c5aa0;
+    color: white;
+    border-color: #2c5aa0;
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Values Section Styles */
+.values-section {
+    padding: 150px 0px;
+    background: url('../images/section-2.png') top center no-repeat;
+    background-size: cover;
+}
+
+.values-title {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.values-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.card {
+    background: #FFF;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(#FFF, #FFF) padding-box, 
+                linear-gradient(90deg, #F0F0F0, #265CFD) border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.values-footer {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.0rem;
+    }
+    
+    .btn-hero {
+        font-size: 0.9rem;
+    }
+    
+    .values-title {
+        font-size: 2rem;
+    }
+    
+    .values-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .values-footer {
+        font-size: 1rem;
+    }
+}
+
+/* Results Section Styles - Section 3 */
+.results-section {
+    background: #2D3E50;
+    color: white;
+}
+
+.results-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.text-thin {
+    font-weight: 200;
+}
+
+.result-card {
+    border: 1px solid #FFF;
+    border-radius: 40px;
+    padding: 18px 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.result-number {
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0rem;
+    line-height: 1;
+}
+
+.result-description {
+    font-size: 1.0rem;
+    margin: 0;
+    font-weight: 100;
+}
+
+/* Solutions Section Styles - Section 4 */
+.solutions-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.solution-card {
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(#FFF, #FFF) padding-box, 
+                linear-gradient(180deg, #9FAEBE, #2D3E50) border-box;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.solution-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 25px;
+    background: #E4E4E4;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.solution-icon-wrapper img {
+    width: 50px;
+}
+
+.solution-title-wrapper {
+    flex: 1;
+    text-align: left;
+}
+
+.solution-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.solution-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.solution-content {
+    text-align: left;
+    padding: 2rem;
+}
+
+.solution-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.solution-list {
+    list-style: url('../images/check-icon.png');
+    padding: 0;
+    margin: 0;
+}
+
+.solution-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    font-weight: 100;
+}
+
+.btn-solutions {
+    background-color: white;
+    color: #333;
+    border: 2px solid #ddd;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-solutions:hover {
+    background-color: #2c5aa0;
+    color: white;
+    border-color: #2c5aa0;
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive for Solutions Section */
+@media (max-width: 768px) {
+    .solutions-title {
+        font-size: 2.2rem;
+    }
+    
+    .solution-card {
+        margin-bottom: 2rem;
+    }
+    
+    .solution-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .solution-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .solution-list li {
+        font-size: 0.9rem;
+    }
+    
+    .btn-solutions {
+        font-size: 1rem;
+        padding: 0.8rem 2rem !important;
+    }
+}
+
+/* RWA Section Styles - Section 5 */
+.rwa-section {
+    background: url('../images/bg-section4.png') right top no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.rwa-title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.rwa-subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+.rwa-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 200;
+}
+
+.rwa-feature {
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rwa-feature:hover {
+    transform: translateY(-5px);
+}
+
+.rwa-icon img {
+    width: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+.rwa-feature-title {
+    font-size: 1.0rem;
+    font-weight: 200;
+    color: white;
+    margin: 0;
+}
+
+.rwa-feature-description {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.rwa-footer {
+    font-size: 1.2rem;
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+.btn-rwa {
+    background-color: white;
+    color: #000;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-rwa:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Responsive for RWA Section */
+@media (max-width: 768px) {
+    .rwa-title {
+        font-size: 2.2rem;
+    }
+    
+    .rwa-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .rwa-description {
+        font-size: 1.1rem;
+    }
+    
+    .rwa-feature {
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .rwa-icon {
+        font-size: 2.5rem;
+    }
+    
+    .rwa-feature-title {
+        font-size: 1.2rem;
+    }
+    
+    .rwa-footer {
+        font-size: 1.1rem;
+    }
+    
+    .btn-rwa {
+        font-size: 1rem;
+        padding: 0.8rem 2rem !important;
+    }
+}
+
+/* Partners Section Styles - Section 6 */
+.partners-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.partners-subtitle {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #666;
+}
+
+.partner-card {
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.partner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.partner-content {
+    text-align: center;
+}
+
+.partner-description {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+/* Responsive for Partners Section */
+@media (max-width: 768px) {
+    .partners-section {
+        padding: 80px 0;
+    }
+    
+    .partners-title {
+        font-size: 2.2rem;
+    }
+    
+    .partners-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .partner-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .partner-logo {
+        min-height: 60px;
+    }
+    
+    .partner-logo img {
+        max-height: 50px;
+    }
+    
+    .partner-description {
+        font-size: 1rem;
+    }
+}
+
+/* Why TechLaw Section Styles - Section 7 */
+.why-techlaw-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.why-feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.why-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.why-feature-icon img {
+    width: 60px;
+}
+
+.why-feature-content {
+    margin-left: 20px;
+}
+
+.why-feature-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0rem;
+}
+
+.why-feature-description {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+}
+
+.btn-why-techlaw {
+    background-color: white;
+    color: #333;
+    border: 2px solid #ddd;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-why-techlaw:hover {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive for Why TechLaw Section */
+@media (max-width: 768px) {
+    .why-techlaw-section {
+        padding: 80px 0;
+    }
+    
+    .why-techlaw-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .why-feature-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .why-feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .why-feature-icon i {
+        font-size: 1.3rem;
+    }
+
+    .why-feature-content {
+        margin-left: 0;
+    }
+    
+    .why-feature-title {
+        font-size: 1.2rem;
+    }
+    
+    .why-feature-description {
+        font-size: 0.95rem;
+    }
+    
+    .btn-why-techlaw {
+        font-size: 1rem;
+        padding: 0.8rem 2rem !important;
+    }
+}
+
+/* Other Solutions Section Styles - Section 8 */
+.other-solutions-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.other-solution-card {
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.other-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.other-solution-icon {
+    flex-shrink: 0;
+}
+
+.other-solution-icon i {
+    font-size: 1.3rem;
+    color: #0A31A6;
+}
+
+.other-solution-content {
+    flex: 1;
+}
+
+.other-solution-title {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #333;
+    margin: 0;
+}
+
+.other-solutions-footer {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.other-solutions-footer .text-primary {
+    color: #265CFD !important;
+}
+
+/* Responsive for Other Solutions Section */
+@media (max-width: 768px) {
+    .other-solutions-section {
+        padding: 80px 0;
+    }
+    
+    .other-solutions-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .other-solution-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .other-solution-icon i {
+        font-size: 1.3rem;
+    }
+    
+    .other-solution-title {
+        font-size: 1.1rem;
+    }
+    
+    .other-solutions-footer {
+        font-size: 1.1rem;
+    }
+}
+
+/* Final CTA Section Styles - Section 9 */
+.final-cta-section {
+    background: #2D3E50;
+    color: white;
+}
+
+.final-cta-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.final-cta-description {
+    font-size: 1.5rem;
+    font-weight: 200;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn-final-primary {
+    background-color: white;
+    color: #2d3748;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-final-primary:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-final-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-final-secondary:hover {
+    background-color: white;
+    color: #2d3748;
+    border-color: white;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive for Final CTA Section */
+@media (max-width: 768px) {
+    .final-cta-section {
+        padding: 80px 0;
+    }
+    
+    .final-cta-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .final-cta-description {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .final-cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-final-primary,
+    .btn-final-secondary {
+        font-size: 1rem;
+        padding: 0.8rem 2rem !important;
+        width: 100%;
+        max-width: 300px;
+    }
+}
