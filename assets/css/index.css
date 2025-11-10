@@ -262,7 +262,9 @@ body {
 }
 
 .text-thin {
+    font-size: 1.5rem;
     font-weight: 200;
+    display: block;
 }
 
 .result-card {
@@ -905,7 +907,7 @@ body {
     }
     
     .final-cta-title {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
         margin-bottom: 1.5rem;
     }
     
