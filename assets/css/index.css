@@ -7,6 +7,79 @@ body {
     background-color: #F2F2F2;
 }
 
+/* Animation System - Aparecer no Site */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.animate-fade.animate-in {
+    opacity: 1;
+}
+
+.animate-slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-slide-left.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-slide-right.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-scale.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger animations for children */
+.stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stagger-children.animate-in > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-children.animate-in > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-children.animate-in > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-children.animate-in > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children.animate-in > *:nth-child(5) { transition-delay: 0.5s; }
+.stagger-children.animate-in > *:nth-child(6) { transition-delay: 0.6s; }
+
+.stagger-children.animate-in > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Navbar Styles */
 .navbar {
     padding: 1rem 0;
@@ -446,6 +519,24 @@ body {
 .partner-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Clickable Partner Cards */
+.clickable-card {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.clickable-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+    border-color: rgba(44, 90, 160, 0.3);
+}
+
+.clickable-card:active {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .partner-logo {
